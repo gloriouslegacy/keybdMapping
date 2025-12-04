@@ -1,4 +1,3 @@
-; Windows 11 Style Key Monitor (English)
 #NoEnv
 #SingleInstance Force
 SetBatchLines, -1
@@ -6,14 +5,13 @@ SetBatchLines, -1
 ; Install keyboard hook
 #InstallKeybdHook
 
-; Create GUI with Windows 11 style
 Gui, +AlwaysOnTop -Caption +Border
 Gui, Color, F3F3F3
 Gui, Font, s10, Segoe UI
 
 ; Title bar
 Gui, Add, Progress, x0 y0 w600 h40 BackgroundFFFFFF Disabled
-Gui, Add, Text, x15 y10 w500 h20 BackgroundTrans cBlack, Keyboard Monitor
+Gui, Add, Text, x15 y10 w500 h20 BackgroundTrans cBlack, Keyboard Hooking
 Gui, Add, Text, x560 y10 w30 h20 BackgroundTrans cBlack Center gGuiClose, X
 
 ; Info section
@@ -44,7 +42,7 @@ Gui, Font, s8, Segoe UI
 Gui, Add, Text, x20 y430 w560 h30 c666666 Center, Tip: RWin = Right Windows Key | LWin = Left Windows Key | vkFF = IME Hangul
 
 ; Show GUI
-Gui, Show, w600 h470, Key Monitor
+Gui, Show, w600 h470, Keyboard Hooking
 return
 
 ; Hotkey to capture all keys
